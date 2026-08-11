@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <defs>
+    <linearGradient id="chargedCrystal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#79f0ff"/>
+      <stop offset="55%" stop-color="#35b8f1"/>
+      <stop offset="100%" stop-color="#1768c7"/>
+    </linearGradient>
+
+    <linearGradient id="chargedBolt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff27a"/>
+      <stop offset="100%" stop-color="#f0a91d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Electric crystal -->
+  <path
+    d="
+      M32 6
+      L47 18
+      L53 32
+      L43 48
+      L32 58
+      L20 48
+      L11 32
+      L18 18
+      Z
+    "
+    fill="url(#chargedCrystal)"
+  />
+
+  <!-- Crystal facets -->
+  <path
+    d="M32 6 L32 54 L18 18 Z"
+    fill="#baf7ff"
+    opacity="0.28"
+  />
+
+  <path
+    d="M32 6 L47 18 L32 54 Z"
+    fill="#187ed4"
+    opacity="0.30"
+  />
+
+  <!-- Lightning bolt -->
+  <path
+    d="
+      M35 16
+      L24 33
+      H31
+      L27 49
+      L42 28
+      H35
+      Z
+    "
+    fill="url(#chargedBolt)"
+  />
+
+  <!-- Small energy spark -->
+  <path
+    d="
+      M49 9
+      C50 13 53 16 57 17
+      C53 18 50 21 49 25
+      C48 21 45 18 41 17
+      C45 16 48 13 49 9Z
+    "
+    fill="#fff9df"
+  />
+
+</svg>

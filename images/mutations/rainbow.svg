@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <defs>
+    <linearGradient id="rainbowBands" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f56bb2"/>
+      <stop offset="18%" stop-color="#d36ee8"/>
+      <stop offset="36%" stop-color="#8d7df1"/>
+      <stop offset="54%" stop-color="#58b7ef"/>
+      <stop offset="72%" stop-color="#62d6a7"/>
+      <stop offset="88%" stop-color="#e6d85f"/>
+      <stop offset="100%" stop-color="#f3a44f"/>
+    </linearGradient>
+
+    <linearGradient id="rainbowShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main rectangular prism/ribbon -->
+  <path
+    d="
+      M9 20
+      C18 17 25 19 32 21
+      C40 23 47 22 55 19
+      L55 43
+      C47 46 40 45 32 43
+      C24 41 17 41 9 44
+      Z
+    "
+    fill="url(#rainbowBands)"
+  />
+
+  <!-- Bright upper sheen -->
+  <path
+    d="
+      M11 22
+      C19 20 25 21 32 23
+      C40 25 47 24 53 22
+      L53 29
+      C46 31 40 31 32 29
+      C24 27 18 27 11 29
+      Z
+    "
+    fill="url(#rainbowShine)"
+  />
+
+  <!-- Vertical prism divisions -->
+  <path d="M18 19 L18 42" stroke="#ffffff" stroke-width="1.5" opacity="0.28"/>
+  <path d="M27 20 L27 42" stroke="#ffffff" stroke-width="1.5" opacity="0.25"/>
+  <path d="M36 22 L36 44" stroke="#ffffff" stroke-width="1.5" opacity="0.25"/>
+  <path d="M45 22 L45 44" stroke="#ffffff" stroke-width="1.5" opacity="0.28"/>
+
+  <!-- Small sparkle -->
+  <path
+    d="
+      M50 10
+      C51 14 53 16 57 17
+      C53 18 51 20 50 24
+      C49 20 47 18 43 17
+      C47 16 49 14 50 10Z
+    "
+    fill="#fff7ff"
+  />
+
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <defs>
+    <linearGradient id="dawnboundOuter" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9fd2"/>
+      <stop offset="55%" stop-color="#d86fd3"/>
+      <stop offset="100%" stop-color="#8f58d8"/>
+    </linearGradient>
+
+    <radialGradient id="dawnboundCore" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fff2b0"/>
+      <stop offset="100%" stop-color="#ffd067"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Main bound crystal -->
+  <path
+    d="
+      M32 7
+      L46 19
+      L42 44
+      L32 57
+      L21 45
+      L18 20
+      Z
+    "
+    fill="url(#dawnboundOuter)"
+  />
+
+  <!-- Left facet -->
+  <path
+    d="M32 7 L21 45 L18 20 Z"
+    fill="#ffd2eb"
+    opacity="0.30"
+  />
+
+  <!-- Right facet -->
+  <path
+    d="M32 7 L46 19 L32 53 Z"
+    fill="#a465e2"
+    opacity="0.28"
+  />
+
+  <!-- Bound center glow -->
+  <circle
+    cx="32"
+    cy="31"
+    r="7"
+    fill="url(#dawnboundCore)"
+  />
+
+  <!-- Tiny top sparkle -->
+  <path
+    d="
+      M49 8
+      C50 12 53 15 57 16
+      C53 17 50 20 49 24
+      C48 20 45 17 41 16
+      C45 15 48 12 49 8Z
+    "
+    fill="#ffe7f7"
+  />
+
+</svg>

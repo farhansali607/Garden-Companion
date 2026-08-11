@@ -1,0 +1,388 @@
+{
+    "plants": [
+        {
+            "id": "carrot",
+            "name": "Carrot",
+            "wikiTitle": "Carrot",
+            "image": "images/plants/carrot.png"
+        },
+        {
+            "id": "cabbage",
+            "name": "Cabbage",
+            "wikiTitle": "Cabbage",
+            "image": "images/plants/cabbage.png"
+        },
+        {
+            "id": "strawberry",
+            "name": "Strawberry",
+            "wikiTitle": "Strawberry",
+            "image": "images/plants/strawberry.png"
+        },
+        {
+            "id": "aloe",
+            "name": "Aloe",
+            "wikiTitle": "Aloe",
+            "image": "images/plants/aloe.png"
+        },
+        {
+            "id": "beet",
+            "name": "Beet",
+            "wikiTitle": "Beet",
+            "image": "images/plants/beet.png"
+        },
+        {
+            "id": "daisy",
+            "name": "Daisy",
+            "wikiTitle": "Daisy",
+            "image": "images/plants/daisy.png"
+        },
+        {
+            "id": "purple-daisy",
+            "name": "Purple Daisy",
+            "wikiTitle": "Purple Daisy",
+            "image": "images/plants/purple-daisy.png"
+        },
+        {
+            "id": "clover",
+            "name": "Clover",
+            "wikiTitle": "Clover",
+            "image": "images/plants/clover.png"
+        },
+        {
+            "id": "four-leaf-clover",
+            "name": "Four-Leaf Clover",
+            "wikiTitle": "Four-Leaf Clover",
+            "image": "images/plants/four-leaf-clover.png"
+        },
+        {
+            "id": "rose",
+            "name": "Rose",
+            "wikiTitle": "Rose",
+            "image": "images/plants/rose.png"
+        },
+        {
+            "id": "fava-bean-pod",
+            "name": "Fava Bean Pod",
+            "wikiTitle": "Fava Bean",
+            "image": "images/plants/fava-bean-pod.png"
+        },
+        {
+            "id": "delphinium",
+            "name": "Delphinium",
+            "wikiTitle": "Delphinium",
+            "image": "images/plants/delphinium.png"
+        },
+        {
+            "id": "snowdrop",
+            "name": "Snowdrop",
+            "wikiTitle": "Snowdrop",
+            "image": "images/plants/snowdrop.png"
+        },
+        {
+            "id": "double-snowdrop",
+            "name": "Double Snowdrop",
+            "wikiTitle": "Double Snowdrop",
+            "image": "images/plants/double-snowdrop.png"
+        },
+        {
+            "id": "blueberry",
+            "name": "Blueberry",
+            "wikiTitle": "Blueberry",
+            "image": "images/plants/blueberry.png"
+        },
+        {
+            "id": "apple",
+            "name": "Apple",
+            "wikiTitle": "Apple",
+            "image": "images/plants/apple.png"
+        },
+        {
+            "id": "tulip",
+            "name": "Tulip",
+            "wikiTitle": "Tulip",
+            "image": "images/plants/tulip.png"
+        },
+        {
+            "id": "tomato",
+            "name": "Tomato",
+            "wikiTitle": "Tomato",
+            "image": "images/plants/tomato.png"
+        },
+        {
+            "id": "daffodil",
+            "name": "Daffodil",
+            "wikiTitle": "Daffodil",
+            "image": "images/plants/daffodil.png"
+        },
+        {
+            "id": "corn",
+            "name": "Corn",
+            "wikiTitle": "Corn",
+            "image": "images/plants/corn.png"
+        },
+        {
+            "id": "watermelon",
+            "name": "Watermelon",
+            "wikiTitle": "Watermelon",
+            "image": "images/plants/watermelon.png"
+        },
+        {
+            "id": "echeveria",
+            "name": "Echeveria",
+            "wikiTitle": "Echeveria",
+            "image": "images/plants/echeveria.png"
+        },
+        {
+            "id": "pumpkin",
+            "name": "Pumpkin",
+            "wikiTitle": "Pumpkin",
+            "image": "images/plants/pumpkin.png"
+        },
+        {
+            "id": "cattail",
+            "name": "Cattail",
+            "wikiTitle": "Cattail",
+            "image": "images/plants/cattail.png"
+        },
+        {
+            "id": "variegated-cattail",
+            "name": "Variegated Cattail",
+            "wikiTitle": "Variegated Cattail",
+            "image": "images/plants/variegated-cattail.png"
+        },
+        {
+            "id": "pear",
+            "name": "Pear",
+            "wikiTitle": "Pear",
+            "image": "images/plants/pear.png"
+        },
+        {
+            "id": "gentian",
+            "name": "Gentian",
+            "wikiTitle": "Gentian",
+            "image": "images/plants/gentian.png"
+        },
+        {
+            "id": "lavender",
+            "name": "Lavender",
+            "wikiTitle": "Lavender",
+            "image": "images/plants/lavender.png"
+        },
+        {
+            "id": "coconut",
+            "name": "Coconut",
+            "wikiTitle": "Coconut",
+            "image": "images/plants/coconut.png"
+        },
+        {
+            "id": "pine-tree",
+            "name": "Pine Tree",
+            "wikiTitle": "Pine Tree",
+            "image": "images/plants/pine-tree.png"
+        },
+        {
+            "id": "banana",
+            "name": "Banana",
+            "wikiTitle": "Banana",
+            "image": "images/plants/banana.png"
+        },
+        {
+            "id": "leek",
+            "name": "Leek",
+            "wikiTitle": "Leek",
+            "image": "images/plants/leek.png"
+        },
+        {
+            "id": "lily",
+            "name": "Lily",
+            "wikiTitle": "Lily",
+            "image": "images/plants/lily.png"
+        },
+        {
+            "id": "saffron",
+            "name": "Saffron",
+            "wikiTitle": "Saffron",
+            "image": "images/plants/saffron.png"
+        },
+        {
+            "id": "cardoon",
+            "name": "Cardoon",
+            "wikiTitle": "Cardoon",
+            "image": "images/plants/cardoon.png"
+        },
+        {
+            "id": "camellia",
+            "name": "Camellia",
+            "wikiTitle": "Camellia",
+            "image": "images/plants/camellia.png"
+        },
+        {
+            "id": "squash",
+            "name": "Squash",
+            "wikiTitle": "Squash",
+            "image": "images/plants/squash.png"
+        },
+        {
+            "id": "peach",
+            "name": "Peach",
+            "wikiTitle": "Peach",
+            "image": "images/plants/peach.png"
+        },
+        {
+            "id": "burros-tail",
+            "name": "Burro's Tail",
+            "wikiTitle": "Burro's Tail",
+            "image": "images/plants/burros-tail.png"
+        },
+        {
+            "id": "mushroom",
+            "name": "Mushroom",
+            "wikiTitle": "Mushroom",
+            "image": "images/plants/mushroom.png"
+        },
+        {
+            "id": "cactus",
+            "name": "Cactus",
+            "wikiTitle": "Cactus",
+            "image": "images/plants/cactus.png"
+        },
+        {
+            "id": "bamboo-shoot",
+            "name": "Bamboo Shoot",
+            "wikiTitle": "Bamboo",
+            "image": "images/plants/bamboo-shoot.png"
+        },
+        {
+            "id": "eggplant",
+            "name": "Eggplant",
+            "wikiTitle": "Eggplant",
+            "image": "images/plants/eggplant.png"
+        },
+        {
+            "id": "prickly-pear",
+            "name": "Prickly Pear",
+            "wikiTitle": "Prickly Pear",
+            "image": "images/plants/prickly-pear.png"
+        },
+        {
+            "id": "violet-cort",
+            "name": "Violet Cort",
+            "wikiTitle": "Violet Cort",
+            "image": "images/plants/violet-cort.png"
+        },
+        {
+            "id": "chrysanthemum",
+            "name": "Chrysanthemum",
+            "wikiTitle": "Chrysanthemum",
+            "image": "images/plants/chrysanthemum.png"
+        },
+        {
+            "id": "date",
+            "name": "Date",
+            "wikiTitle": "Date",
+            "image": "images/plants/date.png"
+        },
+        {
+            "id": "grape",
+            "name": "Grape",
+            "wikiTitle": "Grape",
+            "image": "images/plants/grape.png"
+        },
+        {
+            "id": "poinsettia",
+            "name": "Poinsettia",
+            "wikiTitle": "Poinsettia",
+            "image": "images/plants/poinsettia.png"
+        },
+        {
+            "id": "pepper",
+            "name": "Pepper",
+            "wikiTitle": "Pepper",
+            "image": "images/plants/pepper.png"
+        },
+        {
+            "id": "ube",
+            "name": "Ube",
+            "wikiTitle": "Ube",
+            "image": "images/plants/ube.png"
+        },
+        {
+            "id": "milk-cap",
+            "name": "Milk Cap",
+            "wikiTitle": "Milkcap",
+            "image": "images/plants/milk-cap.png"
+        },
+        {
+            "id": "lemon",
+            "name": "Lemon",
+            "wikiTitle": "Lemon",
+            "image": "images/plants/lemon.png"
+        },
+        {
+            "id": "passion-fruit",
+            "name": "Passion Fruit",
+            "wikiTitle": "Passion Fruit",
+            "image": "images/plants/passion-fruit.png"
+        },
+        {
+            "id": "dragon-fruit",
+            "name": "Dragon Fruit",
+            "wikiTitle": "Dragon Fruit",
+            "image": "images/plants/dragon-fruit.png"
+        },
+        {
+            "id": "cacao-fruit",
+            "name": "Cacao Fruit",
+            "wikiTitle": "Cacao",
+            "image": "images/plants/cacao-fruit.png"
+        },
+        {
+            "id": "lychee-fruit",
+            "name": "Lychee Fruit",
+            "wikiTitle": "Lychee",
+            "image": "images/plants/lychee-fruit.png"
+        },
+        {
+            "id": "sunflower",
+            "name": "Sunflower",
+            "wikiTitle": "Sunflower",
+            "image": "images/plants/sunflower.png"
+        },
+        {
+            "id": "dawnbreaker",
+            "name": "Dawnbreaker",
+            "wikiTitle": "Dawnbreaker",
+            "image": "images/plants/dawnbreaker.png"
+        },
+        {
+            "id": "starweaver-fruit",
+            "name": "Starweaver Fruit",
+            "wikiTitle": "Starweaver",
+            "image": "images/plants/starweaver-fruit.png"
+        },
+        {
+            "id": "thunderpeel",
+            "name": "Thunderpeel",
+            "wikiTitle": "Thunderpeel",
+            "image": "images/plants/thunderpeel.png"
+        },
+        {
+            "id": "stormcap",
+            "name": "Stormcap",
+            "wikiTitle": "Stormcap",
+            "image": "images/plants/stormcap.png"
+        },
+        {
+            "id": "dawnbinder-bulb",
+            "name": "Dawnbinder Bulb",
+            "wikiTitle": "Dawnbinder",
+            "image": "images/plants/dawnbinder-bulb.png"
+        },
+        {
+            "id": "moonbinder-bulb",
+            "name": "Moonbinder Bulb",
+            "wikiTitle": "Moonbinder",
+            "image": "images/plants/moonbinder-bulb.png"
+        }
+    ]
+}

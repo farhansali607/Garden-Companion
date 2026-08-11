@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <defs>
+    <linearGradient id="amberboundOuter" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd899"/>
+      <stop offset="55%" stop-color="#e89b42"/>
+      <stop offset="100%" stop-color="#b9631f"/>
+    </linearGradient>
+
+    <radialGradient id="amberboundCore" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fff3bf"/>
+      <stop offset="100%" stop-color="#ffd36c"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Main bound crystal -->
+  <path
+    d="
+      M32 7
+      L46 19
+      L42 44
+      L32 57
+      L21 45
+      L18 20
+      Z
+    "
+    fill="url(#amberboundOuter)"
+  />
+
+  <!-- Left facet -->
+  <path
+    d="M32 7 L21 45 L18 20 Z"
+    fill="#ffe8bb"
+    opacity="0.30"
+  />
+
+  <!-- Right facet -->
+  <path
+    d="M32 7 L46 19 L32 53 Z"
+    fill="#c26f28"
+    opacity="0.28"
+  />
+
+  <!-- Bound center glow -->
+  <circle
+    cx="32"
+    cy="31"
+    r="7"
+    fill="url(#amberboundCore)"
+  />
+
+  <!-- Tiny top sparkle -->
+  <path
+    d="
+      M49 8
+      C50 12 53 15 57 16
+      C53 17 50 20 49 24
+      C48 20 45 17 41 16
+      C45 15 48 12 49 8Z
+    "
+    fill="#fff8ef"
+  />
+
+</svg>

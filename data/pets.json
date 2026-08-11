@@ -1,0 +1,158 @@
+[
+    {
+        "id": "worm",
+        "name": "Worm",
+        "wikiTitle": "Worm",
+        "image": "images/pets/worm.png"
+    },
+    {
+        "id": "snail",
+        "name": "Snail",
+        "wikiTitle": "Snail",
+        "image": "images/pets/snail.png"
+    },
+    {
+        "id": "bee",
+        "name": "Bee",
+        "wikiTitle": "Bee",
+        "image": "images/pets/bee.png"
+    },
+    {
+        "id": "chicken",
+        "name": "Chicken",
+        "wikiTitle": "Chicken",
+        "image": "images/pets/chicken.png"
+    },
+    {
+        "id": "bunny",
+        "name": "Bunny",
+        "wikiTitle": "Bunny",
+        "image": "images/pets/bunny.png"
+    },
+    {
+        "id": "dragonfly",
+        "name": "Dragonfly",
+        "wikiTitle": "Dragonfly",
+        "image": "images/pets/dragonfly.png"
+    },
+    {
+        "id": "pig",
+        "name": "Pig",
+        "wikiTitle": "Pig",
+        "image": "images/pets/pig.png"
+    },
+    {
+        "id": "cow",
+        "name": "Cow",
+        "wikiTitle": "Cow",
+        "image": "images/pets/cow.png"
+    },
+    {
+        "id": "turkey",
+        "name": "Turkey",
+        "wikiTitle": "Turkey",
+        "image": "images/pets/turkey.png"
+    },
+    {
+        "id": "snow-fox",
+        "name": "Snow Fox",
+        "wikiTitle": "Snow Fox",
+        "image": "images/pets/snow-fox.png"
+    },
+    {
+        "id": "stoat",
+        "name": "Stoat",
+        "wikiTitle": "Stoat",
+        "image": "images/pets/stoat.png"
+    },
+    {
+        "id": "caribou",
+        "name": "Caribou",
+        "wikiTitle": "Caribou",
+        "image": "images/pets/caribou.png"
+    },
+    {
+        "id": "squirrel",
+        "name": "Squirrel",
+        "wikiTitle": "Squirrel",
+        "image": "images/pets/squirrel.png"
+    },
+    {
+        "id": "turtle",
+        "name": "Turtle",
+        "wikiTitle": "Turtle",
+        "image": "images/pets/turtle.png"
+    },
+    {
+        "id": "goat",
+        "name": "Goat",
+        "wikiTitle": "Goat",
+        "image": "images/pets/goat.png"
+    },
+    {
+        "id": "sheep",
+        "name": "Sheep",
+        "wikiTitle": "Sheep",
+        "image": "images/pets/sheep.png"
+    },
+    {
+        "id": "ostrich",
+        "name": "Ostrich",
+        "wikiTitle": "Ostrich",
+        "image": "images/pets/ostrich.png"
+    },
+    {
+        "id": "pony",
+        "name": "Pony",
+        "wikiTitle": "Pony",
+        "image": "images/pets/pony.png"
+    },
+    {
+        "id": "horse",
+        "name": "Horse",
+        "wikiTitle": "Horse",
+        "image": "images/pets/horse.png"
+    },
+    {
+        "id": "fire-horse",
+        "name": "Fire Horse",
+        "wikiTitle": "Fire Horse",
+        "image": "images/pets/fire-horse.png"
+    },
+    {
+        "id": "bat",
+        "name": "Bat",
+        "wikiTitle": "Bat",
+        "image": "images/pets/bat.png"
+    },
+    {
+        "id": "platypus",
+        "name": "Platypus",
+        "wikiTitle": "Platypus",
+        "image": "images/pets/platypus.png"
+    },
+    {
+        "id": "thunder-wolf",
+        "name": "Thunder Wolf",
+        "wikiTitle": "Thunder Wolf",
+        "image": "images/pets/thunder-wolf.png"
+    },
+    {
+        "id": "butterfly",
+        "name": "Butterfly",
+        "wikiTitle": "Butterfly",
+        "image": "images/pets/butterfly.png"
+    },
+    {
+        "id": "peacock",
+        "name": "Peacock",
+        "wikiTitle": "Peacock",
+        "image": "images/pets/peacock.png"
+    },
+    {
+        "id": "capybara",
+        "name": "Capybara",
+        "wikiTitle": "Capybara",
+        "image": "images/pets/capybara.png"
+    }
+]

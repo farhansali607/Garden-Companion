@@ -1,0 +1,2425 @@
+/* ==================================================
+   GARDEN COMPANION
+   MAIN STYLESHEET
+   ================================================== */
+
+
+/* ==================================================
+   SEARCH: GLOBAL SETTINGS
+   ================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #f5f8f1;
+
+    color: #174f3c;
+
+    font-family:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* ==================================================
+   SEARCH: MAIN PAGE WIDTH
+   ================================================== */
+
+.app {
+    width: min(1200px, 94%);
+    margin: 0 auto;
+
+    padding:
+        35px
+        25px
+        60px;
+}
+
+
+/* ==================================================
+   SEARCH: HEADER
+   ================================================== */
+
+.top-header {
+    position: relative;
+
+    min-height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* ==================================================
+   SEARCH: HEADER TITLE
+   ================================================== */
+
+.title-area {
+    text-align: center;
+}
+
+.title-area h1 {
+    margin: 0;
+
+    color: #176b43;
+
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.title-area p {
+    margin:
+        8px
+        0
+        0;
+
+    color: #315f4e;
+
+    font-size: 16px;
+}
+
+
+/* ==================================================
+   SEARCH: OVERALL PROGRESS BOX
+   ================================================== */
+
+.overall-progress {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 170px;
+
+    padding:
+        12px
+        14px;
+
+    text-align: center;
+
+    background: #f7fff3;
+
+    border:
+        2px
+        solid
+        #83bd8c;
+
+    border-radius: 14px;
+}
+
+.progress-number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.progress-label {
+    margin-top: 2px;
+
+    font-size: 12px;
+}
+
+.overall-progress-bar {
+    height: 10px;
+
+    margin-top: 10px;
+
+    background: #dcebd9;
+
+    border-radius: 999px;
+
+    overflow: hidden;
+}
+
+.overall-progress-fill {
+    width: 0%;
+    height: 100%;
+
+    background: #28a745;
+
+    border-radius: inherit;
+
+    transition: width 0.3s ease;
+}
+
+.progress-percent {
+    margin-top: 7px;
+
+    font-size: 12px;
+}
+
+
+/* ==================================================
+   SEARCH: PLANTS PETS TABS
+   ================================================== */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 5px;
+}
+
+.tab {
+    min-width: 150px;
+
+    padding:
+        13px
+        30px;
+
+    background: white;
+
+    color: #176b43;
+
+    border:
+        2px
+        solid
+        #3a8064;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+}
+
+.tab:hover {
+    transform: translateY(-1px);
+}
+
+.tab.active {
+    background: #287858;
+
+    color: white;
+}
+
+
+/* ==================================================
+   SEARCH: PAGE VIEWS
+   ================================================== */
+
+.page-view {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ==================================================
+   SEARCH: SEARCH CONTROLS
+   ================================================== */
+
+.controls {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        auto
+        auto
+        auto;
+
+    gap: 15px;
+
+    align-items: center;
+
+    margin-top: 30px;
+
+    padding: 15px;
+
+    background: #f9fcf7;
+
+    border:
+        1px
+        solid
+        #b8d4c0;
+
+    border-radius: 14px;
+}
+
+
+/* ==================================================
+   SEARCH: SEARCH BAR
+   ================================================== */
+
+.search-box {
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding:
+        0
+        15px;
+
+    background: white;
+
+    border:
+        1px
+        solid
+        #b8c9c0;
+
+    border-radius: 10px;
+}
+
+.search-icon {
+    color: #174f3c;
+
+    font-size: 24px;
+}
+
+.search-box input {
+    width: 100%;
+
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #174f3c;
+
+    font-size: 16px;
+}
+
+.search-box input::placeholder {
+    color: #71847b;
+}
+
+
+/* ==================================================
+   SEARCH: CONTROL BUTTONS
+   ================================================== */
+
+.control-button {
+    height: 48px;
+
+    padding:
+        0
+        22px;
+
+    background: #f7fbf5;
+
+    color: #174f3c;
+
+    border:
+        1px
+        solid
+        #8eb9a0;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease;
+}
+
+.control-button:hover {
+    background: #eaf5e8;
+
+    transform: translateY(-1px);
+}
+.danger-button {
+    color: #9a3d32;
+    border-color: #d6a29b;
+    background: #fff8f6;
+}
+
+.danger-button:hover {
+    background: #ffece8;
+}
+
+
+/* ==================================================
+   SEARCH: MUTATION LIST
+   ================================================== */
+
+.mutation-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 28px;
+}
+
+
+/* ==================================================
+   SEARCH: MUTATION SECTION
+   ================================================== */
+
+.mutation-section {
+    background:
+        var(
+            --mutation-background
+        );
+
+    border:
+        1.5px
+        solid
+        var(
+            --mutation-border
+        );
+
+    border-radius: 11px;
+
+    overflow: hidden;
+
+    transition:
+        box-shadow 0.25s ease,
+        transform 0.2s ease;
+}
+
+
+/* ==================================================
+   SEARCH: MUTATION HEADER
+   ================================================== */
+
+.mutation-header {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        220px
+        1fr
+        100px
+        35px;
+
+    gap: 20px;
+
+    align-items: center;
+
+    padding:
+        14px
+        18px;
+
+    border: none;
+
+    background: transparent;
+
+    color:
+        var(
+            --mutation-text
+        );
+
+    cursor: pointer;
+}
+
+.mutation-header:hover {
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.3
+        );
+}
+
+
+/* ==================================================
+   SEARCH: MUTATION NAME
+   ================================================== */
+
+.mutation-name {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    text-align: left;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mutation-icon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    font-size: 23px;
+}
+
+.mutation-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ==================================================
+   SEARCH: MUTATION PROGRESS BAR
+   ================================================== */
+
+.mutation-progress {
+    width: 100%;
+    height: 10px;
+
+    background:
+        rgba(
+            70,
+            110,
+            80,
+            0.12
+        );
+
+    border-radius: 999px;
+
+    overflow: hidden;
+}
+
+.mutation-progress-fill {
+    height: 100%;
+
+    background: #28a745;
+
+    border-radius: inherit;
+
+    transition: width 0.3s ease;
+}
+
+
+/* ==================================================
+   SEARCH: MUTATION COUNT
+   ================================================== */
+
+.mutation-count {
+    text-align: right;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   SEARCH: MUTATION ARROW
+   ================================================== */
+
+.mutation-arrow {
+    text-align: center;
+
+    font-size: 14px;
+
+    transition: transform 0.2s ease;
+}
+
+.mutation-section.open
+.mutation-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* ==================================================
+   SEARCH: EXPANDED MUTATION AREA
+   ================================================== */
+
+.mutation-content {
+    display: none;
+
+    padding:
+        5px
+        16px
+        16px;
+}
+
+.mutation-section.open
+.mutation-content {
+    display: block;
+}
+
+
+/* ==================================================
+   SEARCH: PLANT GRID
+   ================================================== */
+
+.plant-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            8,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+    gap: 10px;
+
+    /*
+        Two rows are visible.
+
+        The other plants are reached
+        by scrolling inside the section.
+    */
+
+    max-height: 270px;
+
+    padding:
+        4px
+        8px
+        4px
+        2px;
+
+    overflow-y: auto;
+}
+
+
+/* ==================================================
+   SEARCH: SECTION SCROLL BAR
+   ================================================== */
+
+.plant-grid::-webkit-scrollbar {
+    width: 9px;
+}
+
+.plant-grid::-webkit-scrollbar-track {
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.45
+        );
+
+    border-radius: 999px;
+}
+
+.plant-grid::-webkit-scrollbar-thumb {
+    background:
+        var(
+            --mutation-border
+        );
+
+    border-radius: 999px;
+}
+
+
+/* ==================================================
+   SEARCH: PLANT CARD
+   ================================================== */
+
+.plant-card {
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.68
+        );
+
+    border:
+        1px
+        solid
+        rgba(
+            60,
+            90,
+            70,
+            0.18
+        );
+
+    border-radius: 10px;
+
+    color: #243b32;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease,
+        opacity 0.15s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-2px);
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.9
+        );
+}
+
+.plant-card.collected {
+    opacity: 0.68;
+}
+
+
+/* ==================================================
+   SEARCH: PLANT IMAGE PLACEHOLDER
+   ================================================== */
+
+.plant-image {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 38px;
+}
+
+.plant-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ==================================================
+   SEARCH: PLANT NAME
+   ================================================== */
+
+.plant-name {
+    max-width: 100%;
+
+    text-align: center;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+   SEARCH: COLLECTION STATUS
+   ================================================== */
+
+.plant-status {
+    font-size: 11px;
+
+    padding:
+        3px
+        7px;
+
+    border-radius: 999px;
+
+    background: #ecefec;
+
+    color: #555;
+}
+
+.plant-card.collected
+.plant-status {
+    background: #2fa34a;
+
+    color: white;
+}
+
+
+/* ==================================================
+   SEARCH: SEARCH BREATHING EFFECT
+   ================================================== */
+
+.mutation-section.search-match {
+    animation:
+        mutation-breathe
+        1.7s
+        ease-in-out
+        infinite;
+}
+
+@keyframes mutation-breathe {
+
+    0%,
+    100% {
+        box-shadow:
+            0
+            0
+            0
+            rgba(
+                255,
+                255,
+                255,
+                0
+            );
+    }
+
+    50% {
+        box-shadow:
+            0
+            0
+            18px
+            var(
+                --mutation-glow
+            );
+    }
+}
+
+
+/* ==================================================
+   SEARCH: NO SEARCH RESULTS
+   ================================================== */
+
+.no-results {
+    padding: 25px;
+
+    text-align: center;
+
+    color: #61766c;
+}
+
+
+/* ==================================================
+   SEARCH: PETS PLACEHOLDER
+   ================================================== */
+
+.coming-soon {
+    margin-top: 40px;
+
+    padding: 60px;
+
+    text-align: center;
+
+    background: #f9fcf7;
+
+    border:
+        1px
+        solid
+        #bdd5c3;
+
+    border-radius: 15px;
+}
+
+.coming-soon-icon {
+    font-size: 45px;
+}
+
+.coming-soon h2 {
+    margin-bottom: 8px;
+}
+
+
+/* ==================================================
+   SEARCH: FOOTER
+   ================================================== */
+
+footer {
+    margin-top: 55px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: #386650;
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   SEARCH: MOBILE / SMALLER SCREENS
+   ================================================== */
+
+@media (
+    max-width: 900px
+) {
+
+    .top-header {
+        padding-top: 120px;
+    }
+
+    .overall-progress {
+        right: 50%;
+
+        transform:
+            translateX(
+                50%
+            );
+    }
+
+    .controls {
+        grid-template-columns:
+            1fr;
+    }
+
+    .mutation-header {
+        grid-template-columns:
+            170px
+            1fr
+            80px
+            25px;
+    }
+
+    .plant-grid {
+        grid-template-columns:
+            repeat(
+                4,
+                1fr
+            );
+    }
+}
+
+
+@media (
+    max-width: 600px
+) {
+
+    .app {
+        width: 96%;
+
+        padding:
+            20px
+            10px
+            40px;
+    }
+
+    .title-area h1 {
+        font-size: 30px;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        width: 100%;
+    }
+
+    .mutation-header {
+        grid-template-columns:
+            1fr
+            70px
+            20px;
+    }
+
+    .mutation-progress {
+        grid-column:
+            1
+            /
+            -1;
+
+        grid-row: 2;
+    }
+
+    .plant-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+        max-height: 300px;
+    }
+}/* ========================================
+   HEADER POLISH
+   ======================================== */
+
+/* Main Garden Companion title */
+header h1,
+.site-title {
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+    font-size: clamp(38px, 6vw, 66px);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -2px;
+
+    color: #67c94d;
+
+    text-shadow:
+        0 3px 0 #2f8d3c,
+        0 6px 0 #14552e,
+        0 8px 10px rgba(22, 83, 46, 0.20);
+
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+header p,
+.site-subtitle {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.5px;
+
+    color: #315c48;
+
+    margin-top: 0;
+}
+.title-leaf {
+    display: inline-block;
+    font-size: 0.55em;
+    vertical-align: middle;
+    margin: 0 10px;
+    filter: drop-shadow(0 3px 2px rgba(25, 90, 45, 0.20));
+}
+
+.title-leaf:first-child {
+    transform: rotate(-25deg);
+}
+
+.title-leaf:last-child {
+    transform: rotate(25deg) scaleX(-1);
+}/* =========================================================
+   GARDEN COMPANION - HEADER / TABS / FOOTER POLISH
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   HEADER
+   --------------------------------------------------------- */
+
+.top-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 150px;
+    padding: 26px 190px 20px 40px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(202, 246, 177, 0.55),
+            transparent 55%
+        );
+
+    border-radius: 22px 22px 0 0;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN TITLE
+   --------------------------------------------------------- */
+
+.title-area {
+    text-align: center;
+}
+
+.site-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    margin: 0;
+
+    font-family:
+        "Arial Rounded MT Bold",
+        "Arial Black",
+        "Trebuchet MS",
+        sans-serif;
+
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -2px;
+
+    color: #69cf4a;
+
+    text-shadow:
+        0 2px 0 #53ad3b,
+        0 4px 0 #267538,
+        0 6px 0 #124d2a,
+        0 8px 10px rgba(19, 75, 40, 0.20);
+}
+
+
+/* Leaves beside title */
+
+.title-leaf {
+    display: inline-block;
+    flex-shrink: 0;
+
+    font-size: 0.62em;
+
+    filter:
+        drop-shadow(0 3px 2px rgba(24, 88, 42, 0.22));
+}
+
+.left-leaf {
+    transform: rotate(-25deg);
+}
+
+.right-leaf {
+    transform: rotate(25deg) scaleX(-1);
+}
+
+
+/* ---------------------------------------------------------
+   SUBTITLE
+   --------------------------------------------------------- */
+
+.site-subtitle {
+    margin: 17px 0 0;
+
+    font-family:
+        "Trebuchet MS",
+        sans-serif;
+
+    font-size: clamp(16px, 2vw, 21px);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.5px;
+
+    color: #315d48;
+
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+
+/* ---------------------------------------------------------
+   OVERALL COLLECTION BOX
+   --------------------------------------------------------- */
+
+.overall-progress {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 155px;
+    padding: 12px 14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f3fff0,
+            #dff5d8
+        );
+
+    border: 2px solid #87bd85;
+    border-radius: 18px;
+
+    box-shadow:
+        0 3px 0 rgba(73, 133, 75, 0.22),
+        0 6px 14px rgba(63, 115, 67, 0.10);
+}
+
+.overall-icon {
+    font-size: 30px;
+    line-height: 1;
+
+    filter:
+        drop-shadow(0 2px 1px rgba(26, 104, 49, 0.18));
+}
+
+.overall-progress-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.progress-number {
+    font-weight: 900;
+    color: #154f31;
+}
+
+.progress-label {
+    color: #315c45;
+}
+
+
+/* ---------------------------------------------------------
+   PLANTS / PETS TABS
+   --------------------------------------------------------- */
+
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 300px));
+    justify-content: center;
+    gap: 22px;
+
+    margin: 6px auto 24px;
+    padding: 0 20px;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-height: 68px;
+
+    padding: 12px 30px;
+
+    border: 3px solid #27674b;
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #eef8e9 100%
+        );
+
+    color: #225b43;
+
+    font-family:
+        "Arial Rounded MT Bold",
+        "Trebuchet MS",
+        sans-serif;
+
+    font-size: 26px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 0 rgba(25, 90, 59, 0.18),
+        0 8px 15px rgba(31, 91, 59, 0.08);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease;
+}
+
+.tab:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 0 rgba(25, 90, 59, 0.18),
+        0 10px 18px rgba(31, 91, 59, 0.12);
+}
+
+
+/* Active Plants/Pets tab */
+
+.tab.active {
+    background:
+        linear-gradient(
+            180deg,
+            #3f9662 0%,
+            #26754d 100%
+        );
+
+    color: #ffffff;
+
+    border-color: #185b39;
+
+    text-shadow:
+        0 2px 2px rgba(16, 70, 40, 0.30);
+
+    box-shadow:
+        inset 0 2px 0 rgba(255, 255, 255, 0.20),
+        0 4px 0 #174f34,
+        0 8px 15px rgba(26, 92, 55, 0.18);
+}
+
+.tab-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 31px;
+
+    filter:
+        drop-shadow(0 2px 1px rgba(25, 78, 43, 0.18));
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------- */
+
+.site-footer {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    min-height: 130px;
+
+    margin-top: 32px;
+    padding: 25px 20px 0;
+
+    border-radius: 0 0 22px 22px;
+
+    background:
+        radial-gradient(
+            circle at 5% 100%,
+            #79c99d 0 48px,
+            transparent 49px
+        ),
+        radial-gradient(
+            circle at 14% 105%,
+            #65ba8b 0 65px,
+            transparent 66px
+        ),
+        radial-gradient(
+            circle at 25% 110%,
+            #8ed2aa 0 60px,
+            transparent 61px
+        ),
+        radial-gradient(
+            circle at 40% 112%,
+            #63b789 0 75px,
+            transparent 76px
+        ),
+        radial-gradient(
+            circle at 58% 110%,
+            #80c99f 0 72px,
+            transparent 73px
+        ),
+        radial-gradient(
+            circle at 74% 112%,
+            #60af83 0 70px,
+            transparent 71px
+        ),
+        radial-gradient(
+            circle at 88% 106%,
+            #85cda4 0 65px,
+            transparent 66px
+        ),
+        radial-gradient(
+            circle at 98% 105%,
+            #66b98b 0 60px,
+            transparent 61px
+        ),
+        linear-gradient(
+            180deg,
+            #effce8 0%,
+            #d8f5d6 58%,
+            #b9e7c0 100%
+        );
+
+    color: #315841;
+}
+
+.footer-message {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-family:
+        "Trebuchet MS",
+        sans-serif;
+
+    font-size: 19px;
+    font-weight: 600;
+    font-style: italic;
+
+    color: #315d43;
+
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.footer-leaf {
+    display: inline-block;
+    font-size: 24px;
+    transform: rotate(-20deg);
+}
+
+.footer-leaf-right {
+    transform: rotate(20deg);
+}
+
+
+/* ---------------------------------------------------------
+   SMALLER SCREENS
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .top-header {
+        padding:
+            24px
+            20px
+            115px;
+    }
+
+    .overall-progress {
+        top: auto;
+        right: 50%;
+        bottom: 12px;
+
+        transform: translateX(50%);
+    }
+
+    .site-title {
+        font-size: 38px;
+        gap: 8px;
+    }
+
+    .tabs {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .tab {
+        min-height: 58px;
+        padding: 10px;
+        font-size: 21px;
+    }
+
+    .tab-icon {
+        font-size: 25px;
+    }
+}/* =========================================================
+   CENTERING / ALIGNMENT FIX
+   Keep this at the VERY bottom of style.css
+   ========================================================= */
+
+
+/* HEADER - center title on the actual page */
+.top-header {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    min-height: 150px;
+
+    /* Equal left/right padding */
+    padding: 28px 20px 26px;
+}
+
+
+/* TITLE AREA */
+.title-area {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* MAIN TITLE */
+.site-title {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* SUBTITLE */
+.site-subtitle {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   COLLECTION PROGRESS BOX
+
+   Keep it in the upper-right WITHOUT allowing it
+   to push the title away from the center.
+   --------------------------------------------------------- */
+
+.overall-progress {
+    position: absolute;
+
+    top: 26px;
+    right: 26px;
+
+    width: 180px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px 14px;
+}
+
+
+/* Keep collection text from getting squished */
+.overall-progress-info {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 0;
+
+    text-align: center;
+}
+
+.progress-number {
+    white-space: nowrap;
+}
+
+.progress-label {
+    white-space: nowrap;
+}
+
+.progress-percent {
+    white-space: nowrap;
+}
+
+.overall-progress-bar {
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------
+   PLANTS / PETS TABS
+   --------------------------------------------------------- */
+
+.tabs {
+    width: min(100%, 640px);
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+    margin: 8px auto 28px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* Make both buttons exactly equal */
+.tab {
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE / NARROW SCREENS
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 24px 16px;
+    }
+
+    .title-area {
+        width: 100%;
+    }
+
+    .overall-progress {
+        position: static;
+
+        width: 180px;
+
+        margin: 20px auto 0;
+
+        transform: none;
+    }
+
+    .tabs {
+        width: calc(100% - 24px);
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}/* =========================================================
+   PANEL BORDERS + FULL-WIDTH GARDEN FOOTER
+   Keep at the VERY bottom of style.css
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BORDER AROUND SEARCH / CONTROL BUTTONS
+   --------------------------------------------------------- */
+
+.controls {
+    position: relative;
+
+    padding: 16px;
+
+    border: 2px solid #9fc6a7;
+    border-radius: 22px;
+
+    background: rgba(248, 255, 245, 0.55);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.85),
+        0 2px 6px rgba(55, 105, 68, 0.05);
+
+    margin-bottom: 26px;
+}
+
+
+/* ---------------------------------------------------------
+   BORDER AROUND ALL MUTATION SECTIONS
+   --------------------------------------------------------- */
+
+.mutation-list {
+    position: relative;
+
+    padding: 18px;
+
+    border: 2px solid #8fb59a;
+    border-radius: 22px;
+
+    background: rgba(247, 253, 243, 0.42);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.85),
+        0 2px 7px rgba(49, 91, 60, 0.06);
+}
+
+
+/* Give mutation rows a little breathing room */
+.mutation-section:first-child {
+    margin-top: 0;
+}
+
+.mutation-section:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER - TREES ALL THE WAY TO THE SCREEN EDGES
+   --------------------------------------------------------- */
+
+.site-footer {
+    position: relative;
+
+    /* Break out of the centered .app width */
+    width: 100vw;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    margin-top: 32px;
+
+    box-sizing: border-box;
+
+    min-height: 150px;
+
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 0;
+
+    background:
+        radial-gradient(
+            circle at 0% 105%,
+            #66b98b 0 72px,
+            transparent 73px
+        ),
+
+        radial-gradient(
+            circle at 7% 108%,
+            #80caa0 0 78px,
+            transparent 79px
+        ),
+
+        radial-gradient(
+            circle at 16% 112%,
+            #5cae80 0 70px,
+            transparent 71px
+        ),
+
+        radial-gradient(
+            circle at 27% 112%,
+            #8bd0a7 0 82px,
+            transparent 83px
+        ),
+
+        radial-gradient(
+            circle at 39% 115%,
+            #60b486 0 86px,
+            transparent 87px
+        ),
+
+        radial-gradient(
+            circle at 52% 112%,
+            #82cba0 0 80px,
+            transparent 81px
+        ),
+
+        radial-gradient(
+            circle at 64% 115%,
+            #5aad7e 0 86px,
+            transparent 87px
+        ),
+
+        radial-gradient(
+            circle at 77% 111%,
+            #87cea5 0 82px,
+            transparent 83px
+        ),
+
+        radial-gradient(
+            circle at 89% 110%,
+            #62b588 0 76px,
+            transparent 77px
+        ),
+
+        radial-gradient(
+            circle at 100% 105%,
+            #79c99b 0 78px,
+            transparent 79px
+        ),
+
+        linear-gradient(
+            180deg,
+            #effce8 0%,
+            #d8f4d5 55%,
+            #aedfb8 100%
+        );
+
+    border-top: 2px solid #8fbc99;
+}
+
+
+/* Keep footer text above the trees */
+.footer-message {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .controls {
+        padding: 12px;
+        border-radius: 17px;
+    }
+
+    .mutation-list {
+        padding: 12px;
+        border-radius: 17px;
+    }
+
+    .site-footer {
+        min-height: 135px;
+    }
+}/* =========================================================
+   FOOTER WIDTH + BOTTOM GAP FIX
+   ========================================================= */
+
+/* Remove browser/page space underneath the site */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Don't leave extra space below the app */
+.app {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* Footer only extends slightly beyond the main content */
+.site-footer {
+    width: calc(100% + 60px);
+
+    margin-left: -30px;
+    margin-right: -30px;
+
+    margin-top: 28px;
+    margin-bottom: 0;
+
+    min-height: 145px;
+
+    box-sizing: border-box;
+
+    border-radius: 22px 22px 0 0;
+}
+
+
+/* Keep the footer flush with the bottom */
+.site-footer:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Smaller screens don't need as much overhang */
+@media (max-width: 800px) {
+
+    .site-footer {
+        width: calc(100% + 24px);
+
+        margin-left: -12px;
+        margin-right: -12px;
+
+        border-radius: 16px 16px 0 0;
+    }
+}/* =========================================================
+   FINAL GARDEN FOOTER
+   Same width as the website + trees + grass
+   ========================================================= */
+
+.site-footer {
+    position: relative;
+    overflow: hidden;
+
+    /* Match the exact width of the site */
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 28px 0 0;
+
+    min-height: 150px;
+
+    padding: 25px 20px 0;
+
+    /* Remove all previous footer overhang */
+    left: auto;
+    right: auto;
+    transform: none;
+
+    /* Soft garden sky/background */
+    background:
+        linear-gradient(
+            180deg,
+            #effbe9 0%,
+            #d9f3d5 62%,
+            #b8dfbb 100%
+        );
+
+    /* Border reaches both edges of the site */
+    border-top: 2px solid #87b894;
+    border-left: 2px solid #87b894;
+    border-right: 2px solid #87b894;
+    border-bottom: 2px solid #487e58;
+
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* =========================================================
+   BACK TREE LINE
+   ========================================================= */
+
+.site-footer::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 20px;
+
+    height: 80px;
+
+    background:
+
+        /* tree 1 */
+        radial-gradient(
+            circle at 4% 65%,
+            #79bf92 0 22px,
+            transparent 23px
+        ),
+
+        /* tree 2 */
+        radial-gradient(
+            circle at 12% 55%,
+            #66ad80 0 30px,
+            transparent 31px
+        ),
+
+        /* tree 3 */
+        radial-gradient(
+            circle at 21% 69%,
+            #87c79a 0 24px,
+            transparent 25px
+        ),
+
+        /* tree 4 */
+        radial-gradient(
+            circle at 31% 52%,
+            #5fa978 0 32px,
+            transparent 33px
+        ),
+
+        /* tree 5 */
+        radial-gradient(
+            circle at 43% 68%,
+            #82c497 0 26px,
+            transparent 27px
+        ),
+
+        /* tree 6 */
+        radial-gradient(
+            circle at 55% 51%,
+            #69b283 0 33px,
+            transparent 34px
+        ),
+
+        /* tree 7 */
+        radial-gradient(
+            circle at 68% 67%,
+            #8ac99d 0 25px,
+            transparent 26px
+        ),
+
+        /* tree 8 */
+        radial-gradient(
+            circle at 79% 54%,
+            #5ea978 0 31px,
+            transparent 32px
+        ),
+
+        /* tree 9 */
+        radial-gradient(
+            circle at 90% 67%,
+            #7fc294 0 26px,
+            transparent 27px
+        ),
+
+        /* tree 10 */
+        radial-gradient(
+            circle at 98% 54%,
+            #65af80 0 31px,
+            transparent 32px
+        );
+
+    opacity: 0.9;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   GRASS + SMALL TREE TRUNKS
+   ========================================================= */
+
+.site-footer::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 45px;
+
+    background:
+
+        /* little upward grass blades */
+        repeating-linear-gradient(
+            75deg,
+            transparent 0px,
+            transparent 8px,
+            rgba(51, 126, 75, 0.30) 9px,
+            rgba(51, 126, 75, 0.30) 11px,
+            transparent 12px,
+            transparent 20px
+        ),
+
+        /* brighter foreground grass */
+        linear-gradient(
+            180deg,
+            #76be8b 0%,
+            #4f9c6b 100%
+        );
+
+    border-top: 2px solid rgba(65, 139, 85, 0.25);
+
+    z-index: 1;
+}
+
+
+/* Keep footer words above the scenery */
+.footer-message {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #315c43;
+}
+
+
+/* Remove any empty area below the footer */
+.app {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+body {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .site-footer {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+        min-height: 135px;
+
+        border-radius: 16px 16px 0 0;
+    }
+}/* =========================================================
+   FINAL GARDEN FOOTER
+   Same width as the website + trees + grass
+   ========================================================= */
+
+.site-footer {
+    position: relative;
+    overflow: hidden;
+
+    /* Match the exact width of the site */
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 28px 0 0;
+
+    min-height: 150px;
+
+    padding: 25px 20px 0;
+
+    /* Remove all previous footer overhang */
+    left: auto;
+    right: auto;
+    transform: none;
+
+    /* Soft garden sky/background */
+    background:
+        linear-gradient(
+            180deg,
+            #effbe9 0%,
+            #d9f3d5 62%,
+            #b8dfbb 100%
+        );
+
+    /* Border reaches both edges of the site */
+    border-top: 2px solid #87b894;
+    border-left: 2px solid #87b894;
+    border-right: 2px solid #87b894;
+    border-bottom: 2px solid #487e58;
+
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* =========================================================
+   BACK TREE LINE
+   ========================================================= */
+
+.site-footer::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 20px;
+
+    height: 80px;
+
+    background:
+
+        /* tree 1 */
+        radial-gradient(
+            circle at 4% 65%,
+            #79bf92 0 22px,
+            transparent 23px
+        ),
+
+        /* tree 2 */
+        radial-gradient(
+            circle at 12% 55%,
+            #66ad80 0 30px,
+            transparent 31px
+        ),
+
+        /* tree 3 */
+        radial-gradient(
+            circle at 21% 69%,
+            #87c79a 0 24px,
+            transparent 25px
+        ),
+
+        /* tree 4 */
+        radial-gradient(
+            circle at 31% 52%,
+            #5fa978 0 32px,
+            transparent 33px
+        ),
+
+        /* tree 5 */
+        radial-gradient(
+            circle at 43% 68%,
+            #82c497 0 26px,
+            transparent 27px
+        ),
+
+        /* tree 6 */
+        radial-gradient(
+            circle at 55% 51%,
+            #69b283 0 33px,
+            transparent 34px
+        ),
+
+        /* tree 7 */
+        radial-gradient(
+            circle at 68% 67%,
+            #8ac99d 0 25px,
+            transparent 26px
+        ),
+
+        /* tree 8 */
+        radial-gradient(
+            circle at 79% 54%,
+            #5ea978 0 31px,
+            transparent 32px
+        ),
+
+        /* tree 9 */
+        radial-gradient(
+            circle at 90% 67%,
+            #7fc294 0 26px,
+            transparent 27px
+        ),
+
+        /* tree 10 */
+        radial-gradient(
+            circle at 98% 54%,
+            #65af80 0 31px,
+            transparent 32px
+        );
+
+    opacity: 0.9;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   GRASS + SMALL TREE TRUNKS
+   ========================================================= */
+
+.site-footer::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 45px;
+
+    background:
+
+        /* little upward grass blades */
+        repeating-linear-gradient(
+            75deg,
+            transparent 0px,
+            transparent 8px,
+            rgba(51, 126, 75, 0.30) 9px,
+            rgba(51, 126, 75, 0.30) 11px,
+            transparent 12px,
+            transparent 20px
+        ),
+
+        /* brighter foreground grass */
+        linear-gradient(
+            180deg,
+            #76be8b 0%,
+            #4f9c6b 100%
+        );
+
+    border-top: 2px solid rgba(65, 139, 85, 0.25);
+
+    z-index: 1;
+}
+
+
+/* Keep footer words above the scenery */
+.footer-message {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #315c43;
+}
+
+
+/* Remove any empty area below the footer */
+.app {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+body {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .site-footer {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+        min-height: 135px;
+
+        border-radius: 16px 16px 0 0;
+    }
+}/* =========================================================
+   SVG GARDEN FOOTER
+   ========================================================= */
+
+.site-footer {
+    position: relative;
+    overflow: hidden;
+
+    /* Match the exact width of the website */
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 28px 0 0;
+    padding: 24px 20px 0;
+
+    min-height: 165px;
+
+    /* Actual tree + grass artwork */
+    background-image: url("../images/footer-garden.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 100%;
+
+    /* Border lines up with the site edges */
+    border-top: 2px solid #8ab792;
+    border-left: 2px solid #8ab792;
+    border-right: 2px solid #8ab792;
+    border-bottom: 2px solid #477a55;
+
+    border-radius: 20px 20px 0 0;
+
+    /* Cancel older footer positioning */
+    left: auto;
+    right: auto;
+    transform: none;
+}
+
+
+/* Turn off the old CSS-generated trees */
+.site-footer::before,
+.site-footer::after {
+    content: none;
+    display: none;
+}
+
+
+/* Keep footer words above the artwork */
+.footer-message {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    color: #315c43;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   REMOVE EXTRA SPACE UNDER FOOTER
+   ========================================================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.app {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.site-footer {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .site-footer {
+        width: 100%;
+        min-height: 135px;
+
+        margin-left: 0;
+        margin-right: 0;
+
+        border-radius: 16px 16px 0 0;
+
+        background-size: auto 100%;
+        background-position: center bottom;
+    }
+}/* =========================================================
+   KEEP FOOTER AT BOTTOM ON SHORT PAGES
+   ========================================================= */
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*
+   If the current page doesn't contain enough content
+   to fill the screen, this pushes the garden footer down.
+*/
+
+.site-footer {
+    margin-top: auto;
+}
+
+
+/*
+   Give the Pets mutation area normal spacing,
+   even before its four sections are rendered.
+*/
+
+#pet-mutation-list {
+    margin-top: 20px;
+}
+
+
+/*
+   Don't show a big empty mutation box before
+   JavaScript has added the Pet sections.
+*/
+
+#pet-mutation-list:empty {
+    display: none;
+}/* =========================================================
+   PETS FOOTER SPACING FIX
+   ========================================================= */
+
+   
