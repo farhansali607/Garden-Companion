@@ -2422,4 +2422,18 @@ body {
    PETS FOOTER SPACING FIX
    ========================================================= */
 
-   
+   /* =========================================================
+   FAN PROJECT DISCLAIMER
+   ========================================================= */
+
+.fan-disclaimer {
+    position: relative;
+    margin-top: -32px;
+    padding-bottom: 10px;
+    z-index: 2;
+
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.75;
+}
